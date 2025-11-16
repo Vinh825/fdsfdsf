@@ -1,10 +1,8 @@
 package com.healthcare.patient.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.healthcare.patient.IamServiceClient;
 import com.healthcare.patient.dto.PatientRequestDTO;
 import com.healthcare.patient.dto.PatientResponseDTO;
-import com.healthcare.patient.dto.response.UserResponse;
 import com.healthcare.patient.entity.Patient;
 import com.healthcare.patient.repository.PatientRepository;
 import lombok.extern.slf4j.Slf4j;
@@ -14,7 +12,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
 import java.util.List;
-import java.util.UUID;
 import java.util.stream.Collectors;
 
 @Slf4j

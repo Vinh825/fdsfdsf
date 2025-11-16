@@ -1,14 +1,11 @@
 package com.healthcare.patient.filter;
 
-import com.healthcare.patient.IamServiceClient;
-import com.healthcare.patient.dto.request.AuthenticationRequest;
-import com.healthcare.patient.dto.response.AuthenticationResponse;
 import com.healthcare.patient.dto.response.AuthenticationResponseData;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -20,39 +17,53 @@ import java.io.IOException;
 import java.util.*;
 
 @Component
+@RequiredArgsConstructor // Sử dụng Lombok để tự động tiêm bean
 public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
-    // 1. Tiêm Feign Client vào
-    @Autowired
-    private IamServiceClient iamServiceClient;
+    // 1. Tiêm Service trung gian (thay vì tiêm Client)
+    private final IamAuthService iamAuthService;
 
     @Override
-    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
+    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
+            throws ServletException, IOException {
+
+        // Xóa cache cũ
+        SecurityContextHolder.clearContext();
+
         String jwt = getJwtFromRequest(request);
-        if (!Objects.isNull(jwt)) {
-            AuthenticationRequest authenticationRequest = new AuthenticationRequest();
-            authenticationRequest.setToken(jwt);
+        if (jwt != null) {
+            try {
+                // 2. Gọi Service (thay vì client.login)
+                AuthenticationResponseData authData = iamAuthService.getAuthenticationData(jwt);
 
-            // 2. GỌI BẰNG FEIGN CLIENT (thay vì RestTemplate + ObjectMapper)
-            // Feign tự động gọi, tự thêm API key, tự parse JSON
-            AuthenticationResponse authenticationResponse = iamServiceClient.login(authenticationRequest);
+                // 3. Lấy Privilege từ response (đã giống code cũ)
+                Set<String> privilegeCodes = authData.getPrivilegeCodes();
+                if (privilegeCodes == null) {
+                    privilegeCodes = Collections.emptySet();
+                }
 
-            AuthenticationResponseData authenticationResponseData = authenticationResponse.getData();
-            Set<String> privilegeCodes = authenticationResponseData.getPrivilegeCodes();
-            System.out.println(">>>>>>>>>>>>>>>>>> " + privilegeCodes);
-            List<GrantedAuthority> authorities = new ArrayList<>();
-            for (String privilegeCode : privilegeCodes) {
-                GrantedAuthority grantedAuthority = new SimpleGrantedAuthority(privilegeCode);
-                authorities.add(grantedAuthority);
+                List<GrantedAuthority> authorities = privilegeCodes.stream()
+                        .map(SimpleGrantedAuthority::new)
+                        .collect(Collectors.toList());
+
+                // 4. Tạo AuthenticationToken
+                UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(
+                        authData.getUserId(), // Principal (quan trọng)
+                        null, // Credentials (không cần)
+                        authorities // Danh sách quyền (Privileges)
+                );
+
+                // 5. Ghi chi tiết thông tin user vào context (để Controller lấy nếu cần)
+                authenticationToken.setDetails(authData);
+                SecurityContextHolder.getContext().setAuthentication(authenticationToken);
+
+            } catch (Exception e) {
+                // Nếu FeignErrorDecoder ném lỗi, hoặc IamAuthService ném lỗi
+                logger.warn("JWT Authentication failed: " + e.getMessage());
+                // Không set SecurityContext -> request sẽ bị từ chối ở SecurityConfig
             }
-            UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(
-                    authenticationResponseData.getUserId(),
-                    authenticationResponseData.getRoleCode(),
-                    authorities
-            );
-            authenticationToken.setDetails(authenticationResponseData);
-            SecurityContextHolder.getContext().setAuthentication(authenticationToken);
         }
+
         filterChain.doFilter(request, response);
     }
 

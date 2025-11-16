@@ -1,0 +1,18 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: iam
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: 123456
+    driver: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+app:
+  api-key:
+    name: X-API-Key
+    value: 1234

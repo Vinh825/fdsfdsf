@@ -1,9 +1,9 @@
-package com.healthcare.patient.dto.response;
+package com.healthcare.patient.iam.dto;
 
 
 import java.util.Set;
 
-public class AuthenticationResponseData {
+public class IamAuthResponseData {
     private String userId;
     private String username;
     private String email;

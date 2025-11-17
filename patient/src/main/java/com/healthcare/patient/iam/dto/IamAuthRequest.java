@@ -1,4 +1,4 @@
-package com.healthcare.patient.dto.request;
+package com.healthcare.patient.iam.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class AuthenticationRequest {
+public class IamAuthRequest {
     private String token;
 
     public String getToken() {

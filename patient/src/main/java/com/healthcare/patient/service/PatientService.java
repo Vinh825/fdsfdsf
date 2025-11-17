@@ -22,13 +22,6 @@ public class PatientService {
     @Autowired
     private PatientRepository patientRepository;
     private final ObjectMapper objectMapper = new ObjectMapper();
-    private final  IamServiceClient iamServiceClient;
-
-    public PatientService(IamServiceClient iamServiceClient) {
-        this.iamServiceClient = iamServiceClient;
-    }
-
-
 
     public PatientResponseDTO createPatient(PatientRequestDTO requestDTO, String createdBy) {
         if (patientRepository.existsByPatientCode(requestDTO.getPatientCode())) {

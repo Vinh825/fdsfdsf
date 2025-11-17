@@ -1,9 +1,9 @@
 package com.healthcare.patient.service;
 
-import com.healthcare.patient.IamAuthClient;
-import com.healthcare.patient.dto.request.AuthenticationRequest;
-import com.healthcare.patient.dto.response.AuthenticationResponse;
-import com.healthcare.patient.dto.response.AuthenticationResponseData;
+import com.healthcare.patient.client.IamAuthClient;
+import com.healthcare.patient.iam.dto.IamAuthRequest;
+import com.healthcare.patient.iam.dto.IamAuthResponse;
+import com.healthcare.patient.iam.dto.IamAuthResponseData;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 @Slf4j
 public class IamAuthService {
 
+    // Tiêm interface client (đã sửa)
     private final IamAuthClient iamAuthClient;
 
     /**
@@ -20,16 +21,16 @@ public class IamAuthService {
      * @param jwt Token (lấy từ header)
      * @return Dữ liệu xác thực (UserId, Roles, Privileges)
      */
-    public AuthenticationResponseData getAuthenticationData(String jwt) {
+    public IamAuthResponseData getAuthenticationData(String jwt) {
         log.debug("Calling IAM service to validate token...");
 
-        // 1. Chuẩn bị request body
-        AuthenticationRequest request = AuthenticationRequest.builder()
+        // 1. Chuẩn bị request body (dùng DTO mới)
+        IamAuthRequest request = IamAuthRequest.builder()
                 .token(jwt)
                 .build();
 
-        // 2. Gọi Feign Client (đã tự động đính kèm X-API-Key nhờ FeignConfig)
-        AuthenticationResponse response = iamAuthClient.validateToken(request);
+        // 2. Gọi Feign Client
+        IamAuthResponse response = iamAuthClient.validateToken(request);
 
         // 3. Xử lý response
         if (response == null || response.getError() != null || response.getData() == null) {

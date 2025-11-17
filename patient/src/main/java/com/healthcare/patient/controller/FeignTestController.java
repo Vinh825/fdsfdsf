@@ -1,11 +1,9 @@
 package com.healthcare.patient.controller;
 
-import com.healthcare.patient.dto.response.AuthenticationResponseData;
-import org.springframework.http.ResponseEntity;
+import com.healthcare.patient.iam.dto.IamAuthResponseData;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.Authentication;
-import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -29,7 +27,7 @@ public class FeignTestController {
         }
 
         // Lấy object AuthenticationResponseData đã lưu trong details
-        AuthenticationResponseData authData = (AuthenticationResponseData) authentication.getDetails();
+        IamAuthResponseData authData = (IamAuthResponseData) authentication.getDetails();
         return ResponseEntity.ok(authData);
     }
 

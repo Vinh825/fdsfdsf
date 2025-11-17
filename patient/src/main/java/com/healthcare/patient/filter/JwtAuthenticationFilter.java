@@ -1,6 +1,7 @@
 package com.healthcare.patient.filter;
 
-import com.healthcare.patient.dto.response.AuthenticationResponseData;
+import com.healthcare.patient.iam.dto.IamAuthResponseData;
+import com.healthcare.patient.service.IamAuthService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
@@ -14,29 +15,29 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
-import java.util.*;
+import java.util.Collections;
+import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 @Component
-@RequiredArgsConstructor // Sử dụng Lombok để tự động tiêm bean
+@RequiredArgsConstructor
 public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
-    // 1. Tiêm Service trung gian (thay vì tiêm Client)
     private final IamAuthService iamAuthService;
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
             throws ServletException, IOException {
 
-        // Xóa cache cũ
         SecurityContextHolder.clearContext();
 
         String jwt = getJwtFromRequest(request);
         if (jwt != null) {
             try {
-                // 2. Gọi Service (thay vì client.login)
-                AuthenticationResponseData authData = iamAuthService.getAuthenticationData(jwt);
+                // 2. Gọi Service (dùng DTO mới)
+                IamAuthResponseData authData = iamAuthService.getAuthenticationData(jwt);
 
-                // 3. Lấy Privilege từ response (đã giống code cũ)
                 Set<String> privilegeCodes = authData.getPrivilegeCodes();
                 if (privilegeCodes == null) {
                     privilegeCodes = Collections.emptySet();
@@ -46,21 +47,17 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
                         .map(SimpleGrantedAuthority::new)
                         .collect(Collectors.toList());
 
-                // 4. Tạo AuthenticationToken
                 UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(
-                        authData.getUserId(), // Principal (quan trọng)
-                        null, // Credentials (không cần)
-                        authorities // Danh sách quyền (Privileges)
+                        authData.getUserId(),
+                        null,
+                        authorities
                 );
 
-                // 5. Ghi chi tiết thông tin user vào context (để Controller lấy nếu cần)
                 authenticationToken.setDetails(authData);
                 SecurityContextHolder.getContext().setAuthentication(authenticationToken);
 
             } catch (Exception e) {
-                // Nếu FeignErrorDecoder ném lỗi, hoặc IamAuthService ném lỗi
                 logger.warn("JWT Authentication failed: " + e.getMessage());
-                // Không set SecurityContext -> request sẽ bị từ chối ở SecurityConfig
             }
         }
 

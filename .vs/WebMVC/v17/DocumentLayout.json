@@ -1,0 +1,365 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\PC\\Desktop\\PRN12\\WebMVC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A7E538C2-12E5-48F9-94CD-1644631CFD76}|BlazorWeb\\BlazorWeb.csproj|c:\\users\\pc\\desktop\\prn12\\webmvc\\blazorweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7E538C2-12E5-48F9-94CD-1644631CFD76}|BlazorWeb\\BlazorWeb.csproj|solutionrelative:blazorweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68BF2A50-9227-4B46-B87B-C33C027714D6}|DAL\\DAL.csproj|c:\\users\\pc\\desktop\\prn12\\webmvc\\dal\\migrations\\mvcwebcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68BF2A50-9227-4B46-B87B-C33C027714D6}|DAL\\DAL.csproj|solutionrelative:dal\\migrations\\mvcwebcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5A84C5-9A68-4CD0-9E5B-A160B23F4B21}|MVCWeb\\MVCWeb.csproj|c:\\users\\pc\\desktop\\prn12\\webmvc\\mvcweb\\mvcweb.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{AF5A84C5-9A68-4CD0-9E5B-A160B23F4B21}|MVCWeb\\MVCWeb.csproj|solutionrelative:mvcweb\\mvcweb.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68BF2A50-9227-4B46-B87B-C33C027714D6}|DAL\\DAL.csproj|c:\\users\\pc\\desktop\\prn12\\webmvc\\dal\\data\\mvcwebcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68BF2A50-9227-4B46-B87B-C33C027714D6}|DAL\\DAL.csproj|solutionrelative:dal\\data\\mvcwebcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A62E5643-3C05-4914-89DB-5154C3D028CE}|BLL\\BLL.csproj|c:\\users\\pc\\desktop\\prn12\\webmvc\\bll\\service\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A62E5643-3C05-4914-89DB-5154C3D028CE}|BLL\\BLL.csproj|solutionrelative:bll\\service\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7E538C2-12E5-48F9-94CD-1644631CFD76}|BlazorWeb\\BlazorWeb.csproj|c:\\users\\pc\\desktop\\prn12\\webmvc\\blazorweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A7E538C2-12E5-48F9-94CD-1644631CFD76}|BlazorWeb\\BlazorWeb.csproj|solutionrelative:blazorweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7E538C2-12E5-48F9-94CD-1644631CFD76}|BlazorWeb\\BlazorWeb.csproj|c:\\users\\pc\\desktop\\prn12\\webmvc\\blazorweb\\blazorweb.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A7E538C2-12E5-48F9-94CD-1644631CFD76}|BlazorWeb\\BlazorWeb.csproj|solutionrelative:blazorweb\\blazorweb.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5A84C5-9A68-4CD0-9E5B-A160B23F4B21}|MVCWeb\\MVCWeb.csproj|c:\\users\\pc\\desktop\\prn12\\webmvc\\mvcweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AF5A84C5-9A68-4CD0-9E5B-A160B23F4B21}|MVCWeb\\MVCWeb.csproj|solutionrelative:mvcweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5A84C5-9A68-4CD0-9E5B-A160B23F4B21}|MVCWeb\\MVCWeb.csproj|c:\\users\\pc\\desktop\\prn12\\webmvc\\mvcweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF5A84C5-9A68-4CD0-9E5B-A160B23F4B21}|MVCWeb\\MVCWeb.csproj|solutionrelative:mvcweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7E538C2-12E5-48F9-94CD-1644631CFD76}|BlazorWeb\\BlazorWeb.csproj|c:\\users\\pc\\desktop\\prn12\\webmvc\\blazorweb\\components\\pages\\products.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A7E538C2-12E5-48F9-94CD-1644631CFD76}|BlazorWeb\\BlazorWeb.csproj|solutionrelative:blazorweb\\components\\pages\\products.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5A84C5-9A68-4CD0-9E5B-A160B23F4B21}|MVCWeb\\MVCWeb.csproj|c:\\users\\pc\\desktop\\prn12\\webmvc\\mvcweb\\views\\products\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AF5A84C5-9A68-4CD0-9E5B-A160B23F4B21}|MVCWeb\\MVCWeb.csproj|solutionrelative:mvcweb\\views\\products\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68BF2A50-9227-4B46-B87B-C33C027714D6}|DAL\\DAL.csproj|c:\\users\\pc\\desktop\\prn12\\webmvc\\dal\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68BF2A50-9227-4B46-B87B-C33C027714D6}|DAL\\DAL.csproj|solutionrelative:dal\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7E538C2-12E5-48F9-94CD-1644631CFD76}|BlazorWeb\\BlazorWeb.csproj|c:\\users\\pc\\desktop\\prn12\\webmvc\\blazorweb\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A7E538C2-12E5-48F9-94CD-1644631CFD76}|BlazorWeb\\BlazorWeb.csproj|solutionrelative:blazorweb\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68BF2A50-9227-4B46-B87B-C33C027714D6}|DAL\\DAL.csproj|c:\\users\\pc\\desktop\\prn12\\webmvc\\dal\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68BF2A50-9227-4B46-B87B-C33C027714D6}|DAL\\DAL.csproj|solutionrelative:dal\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7E538C2-12E5-48F9-94CD-1644631CFD76}|BlazorWeb\\BlazorWeb.csproj|c:\\users\\pc\\desktop\\prn12\\webmvc\\blazorweb\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A7E538C2-12E5-48F9-94CD-1644631CFD76}|BlazorWeb\\BlazorWeb.csproj|solutionrelative:blazorweb\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7E538C2-12E5-48F9-94CD-1644631CFD76}|BlazorWeb\\BlazorWeb.csproj|c:\\users\\pc\\desktop\\prn12\\webmvc\\blazorweb\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A7E538C2-12E5-48F9-94CD-1644631CFD76}|BlazorWeb\\BlazorWeb.csproj|solutionrelative:blazorweb\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A62E5643-3C05-4914-89DB-5154C3D028CE}|BLL\\BLL.csproj|c:\\users\\pc\\desktop\\prn12\\webmvc\\bll\\service\\interface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A62E5643-3C05-4914-89DB-5154C3D028CE}|BLL\\BLL.csproj|solutionrelative:bll\\service\\interface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5A84C5-9A68-4CD0-9E5B-A160B23F4B21}|MVCWeb\\MVCWeb.csproj|c:\\users\\pc\\desktop\\prn12\\webmvc\\mvcweb\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF5A84C5-9A68-4CD0-9E5B-A160B23F4B21}|MVCWeb\\MVCWeb.csproj|solutionrelative:mvcweb\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68BF2A50-9227-4B46-B87B-C33C027714D6}|DAL\\DAL.csproj|c:\\users\\pc\\desktop\\prn12\\webmvc\\dal\\dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{68BF2A50-9227-4B46-B87B-C33C027714D6}|DAL\\DAL.csproj|solutionrelative:dal\\dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68BF2A50-9227-4B46-B87B-C33C027714D6}|DAL\\DAL.csproj|c:\\users\\pc\\desktop\\prn12\\webmvc\\dal\\repositories\\interface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68BF2A50-9227-4B46-B87B-C33C027714D6}|DAL\\DAL.csproj|solutionrelative:dal\\repositories\\interface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68BF2A50-9227-4B46-B87B-C33C027714D6}|DAL\\DAL.csproj|c:\\users\\pc\\desktop\\prn12\\webmvc\\dal\\migrations\\20260205065428_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68BF2A50-9227-4B46-B87B-C33C027714D6}|DAL\\DAL.csproj|solutionrelative:dal\\migrations\\20260205065428_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:5:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BlazorWeb.csproj",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRN12\\WebMVC\\BlazorWeb\\BlazorWeb.csproj",
+              "RelativeDocumentMoniker": "BlazorWeb\\BlazorWeb.csproj",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRN12\\WebMVC\\BlazorWeb\\BlazorWeb.csproj",
+              "RelativeToolTip": "BlazorWeb\\BlazorWeb.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-10T12:40:31.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRN12\\WebMVC\\BLL\\Service\\ProductService.cs",
+              "RelativeDocumentMoniker": "BLL\\Service\\ProductService.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRN12\\WebMVC\\BLL\\Service\\ProductService.cs",
+              "RelativeToolTip": "BLL\\Service\\ProductService.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAwwBYAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T07:27:34.184Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRN12\\WebMVC\\BlazorWeb\\appsettings.json",
+              "RelativeDocumentMoniker": "BlazorWeb\\appsettings.json",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRN12\\WebMVC\\BlazorWeb\\appsettings.json",
+              "RelativeToolTip": "BlazorWeb\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-10T09:47:58.979Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MVCWebContext.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRN12\\WebMVC\\DAL\\Data\\MVCWebContext.cs",
+              "RelativeDocumentMoniker": "DAL\\Data\\MVCWebContext.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRN12\\WebMVC\\DAL\\Data\\MVCWebContext.cs",
+              "RelativeToolTip": "DAL\\Data\\MVCWebContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T08:51:52.844Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MVCWebContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRN12\\WebMVC\\DAL\\Migrations\\MVCWebContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "DAL\\Migrations\\MVCWebContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRN12\\WebMVC\\DAL\\Migrations\\MVCWebContextModelSnapshot.cs",
+              "RelativeToolTip": "DAL\\Migrations\\MVCWebContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T07:01:33.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MVCWeb.csproj",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRN12\\WebMVC\\MVCWeb\\MVCWeb.csproj",
+              "RelativeDocumentMoniker": "MVCWeb\\MVCWeb.csproj",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRN12\\WebMVC\\MVCWeb\\MVCWeb.csproj",
+              "RelativeToolTip": "MVCWeb\\MVCWeb.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-05T06:33:11.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRN12\\WebMVC\\BlazorWeb\\Program.cs",
+              "RelativeDocumentMoniker": "BlazorWeb\\Program.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRN12\\WebMVC\\BlazorWeb\\Program.cs",
+              "RelativeToolTip": "BlazorWeb\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T09:48:20.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRN12\\WebMVC\\MVCWeb\\appsettings.json",
+              "RelativeDocumentMoniker": "MVCWeb\\appsettings.json",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRN12\\WebMVC\\MVCWeb\\appsettings.json",
+              "RelativeToolTip": "MVCWeb\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAB8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-05T06:48:47.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRN12\\WebMVC\\MVCWeb\\Program.cs",
+              "RelativeDocumentMoniker": "MVCWeb\\Program.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRN12\\WebMVC\\MVCWeb\\Program.cs",
+              "RelativeToolTip": "MVCWeb\\Program.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAIAwwA8AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T06:46:18.312Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Products.razor",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRN12\\WebMVC\\BlazorWeb\\Components\\Pages\\Products.razor",
+              "RelativeDocumentMoniker": "BlazorWeb\\Components\\Pages\\Products.razor",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRN12\\WebMVC\\BlazorWeb\\Components\\Pages\\Products.razor",
+              "RelativeToolTip": "BlazorWeb\\Components\\Pages\\Products.razor",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABoAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-10T09:58:27.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRN12\\WebMVC\\DAL\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "DAL\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRN12\\WebMVC\\DAL\\Models\\Product.cs",
+              "RelativeToolTip": "DAL\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T06:30:33.43Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Interface.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRN12\\WebMVC\\BLL\\Service\\Interface.cs",
+              "RelativeDocumentMoniker": "BLL\\Service\\Interface.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRN12\\WebMVC\\BLL\\Service\\Interface.cs",
+              "RelativeToolTip": "BLL\\Service\\Interface.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAmwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T07:27:59.442Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRN12\\WebMVC\\BlazorWeb\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "BlazorWeb\\Components\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRN12\\WebMVC\\BlazorWeb\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "BlazorWeb\\Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-10T10:44:00.174Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRN12\\WebMVC\\MVCWeb\\Views\\Products\\Create.cshtml",
+              "RelativeDocumentMoniker": "MVCWeb\\Views\\Products\\Create.cshtml",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRN12\\WebMVC\\MVCWeb\\Views\\Products\\Create.cshtml",
+              "RelativeToolTip": "MVCWeb\\Views\\Products\\Create.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-10T10:50:01.06Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRN12\\WebMVC\\DAL\\Repositories\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\Repositories\\ProductRepository.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRN12\\WebMVC\\DAL\\Repositories\\ProductRepository.cs",
+              "RelativeToolTip": "DAL\\Repositories\\ProductRepository.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAiwDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T07:14:56.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRN12\\WebMVC\\BlazorWeb\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "BlazorWeb\\Components\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRN12\\WebMVC\\BlazorWeb\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "BlazorWeb\\Components\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-10T10:00:51.845Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRN12\\WebMVC\\BlazorWeb\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "BlazorWeb\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRN12\\WebMVC\\BlazorWeb\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "BlazorWeb\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-10T10:00:55.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Interface.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRN12\\WebMVC\\DAL\\Repositories\\Interface.cs",
+              "RelativeDocumentMoniker": "DAL\\Repositories\\Interface.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRN12\\WebMVC\\DAL\\Repositories\\Interface.cs",
+              "RelativeToolTip": "DAL\\Repositories\\Interface.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T07:14:30.672Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "20260205065428_Init.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRN12\\WebMVC\\DAL\\Migrations\\20260205065428_Init.cs",
+              "RelativeDocumentMoniker": "DAL\\Migrations\\20260205065428_Init.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRN12\\WebMVC\\DAL\\Migrations\\20260205065428_Init.cs",
+              "RelativeToolTip": "DAL\\Migrations\\20260205065428_Init.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T07:01:31.734Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRN12\\WebMVC\\MVCWeb\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "MVCWeb\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRN12\\WebMVC\\MVCWeb\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "MVCWeb\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAIkAAAAAAAAAAAAuwJgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T06:40:12.966Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "DAL.csproj",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\PRN12\\WebMVC\\DAL\\DAL.csproj",
+              "RelativeDocumentMoniker": "DAL\\DAL.csproj",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\PRN12\\WebMVC\\DAL\\DAL.csproj",
+              "RelativeToolTip": "DAL\\DAL.csproj",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-05T06:33:04.291Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

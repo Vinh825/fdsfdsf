@@ -1,0 +1,132 @@
+﻿@rendermode InteractiveServer
+@page "/products"
+@using DAL.Models
+@using BLL.Service
+@inject IProductService ProductService
+
+
+
+
+<h3>Product Management</h3>
+
+<EditForm Model="product" OnValidSubmit="Save">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <!-- Name -->
+    <div class="mb-2">
+        <label class="form-label">Product Name</label>
+        <InputText class="form-control"
+                   @bind-Value="product.Name" />
+    </div>
+
+    <!-- Description -->
+    <div class="mb-2">
+        <label class="form-label">Description</label>
+        <InputTextArea class="form-control"
+                       @bind-Value="product.Description" />
+    </div>
+
+    <!-- Price -->
+    <div class="mb-2">
+        <label class="form-label">Price</label>
+        <InputNumber class="form-control"
+                     @bind-Value="product.Price" />
+    </div>
+
+    <button class="btn btn-primary mt-2" type="submit">
+        @(product.Id == Guid.Empty ? "Add" : "Update")
+    </button>
+
+    <button class="btn btn-secondary mt-2 ms-2" type="button" @onclick="Clear">
+        Clear
+    </button>
+</EditForm>
+
+<hr />
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var p in products)
+        {
+            <tr>
+                <td>@p.Name</td>
+                <td>@p.Description</td>
+                <td>@p.Price</td>
+                <td>
+                    <button class="btn btn-warning btn-sm"
+                            @onclick="() => Edit(p)">
+                        Edit
+                    </button>
+
+                    <button class="btn btn-danger btn-sm ms-1"
+                            @onclick="() => Delete(p.Id)">
+                        Delete
+                    </button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+    List<Product> products = new();
+    Product product = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadData();
+    }
+
+    async Task LoadData()
+    {
+        products = (await ProductService.GetAllAsync()).ToList();
+    }
+
+    async Task Save()
+    {
+        if (product.Id == Guid.Empty)
+        {
+            product.Id = Guid.NewGuid();   // ⭐ BẮT BUỘC
+            await ProductService.AddAsync(product);
+        }
+        else
+        {
+            await ProductService.UpdateAsync(product);
+        }
+
+        await LoadData();
+        Clear();
+    }
+
+
+    void Edit(Product p)
+    {
+        product = new Product
+        {
+            Id = p.Id,
+            Name = p.Name,
+            Price = p.Price
+        };
+    }
+
+    async Task Delete(Guid id)
+    {
+        await ProductService.DeleteAsync(id);
+        await LoadData();
+    }
+
+
+    void Clear()
+    {
+        product = new Product();
+    }
+}
